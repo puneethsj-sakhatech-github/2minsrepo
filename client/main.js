@@ -35,4 +35,4 @@ render(
     <Router history={browserHistory}>
       {routes}
     </Router>
-  </Provider>,document.getElementById('app'));
+  </Provider>,document.getElementById('root'));

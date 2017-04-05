@@ -25,46 +25,98 @@ class NavigationBar extends Component {
     const {isAuthenticated} = this.props.auth;
     const user = this.props.auth.user;
     console.log('path is ' , this.props.pathname);
-    const userLinks = (
-      <nav className="navbar navbar-default">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <Link to="/" className="navbar-brand">React Starter</Link>
-          </div>
-          <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav navbar-right">
-              { !isAuthenticated && <li>
-                <Link
-                  to={{
-                    pathname: `/`,
-                  }}
-                >Login</Link>
-              </li> }
-              { isAuthenticated && <li className="pull-right dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{user.first_name} {user.last_name} <span className="caret"></span></a>
-                <ul className="dropdown-menu">
-                  <li><a href="#" onClick = {this.logout}>Logout</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" className="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li role="separator" className="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li> }
-            </ul>
-          </div>
-        </div>
-      </nav>
-    );
-
-    const guestLinks = (
-      <div></div>
-    );
-
     return (
-      <div>
-        { (this.props.pathname != '/') ? userLinks : guestLinks }
-      </div>
+      
+        <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div className="container">
+              <div className="navbar-header">
+                  <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span className="sr-only">Toggle navigation</span>
+                      <span className="icon-bar"></span>
+                      <span className="icon-bar"></span>
+                  </button>
+                  <Link  className="navbar-brand" to="/">2 Minutes...!!!</Link>
+              </div>
+
+              <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul className="nav navbar-nav">
+                      <li>
+                          <Link to="/groceries">Groceries</Link>
+                      </li>
+                      <li>
+                          <a href="#">Fruits</a>
+                      </li>
+                      <li>
+                          <a href="#">Vegetables</a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+
+                      <li>
+                          <a href="#"></a>
+                      </li><li>
+                          <a href="#"></a>
+                      </li><li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="#"></a>
+                      </li>
+
+                      <li>
+                          <a href="#"></a>
+                      </li>
+                      <li>
+                          <a href="http://google.com"><img src="http://www.foodytreat.com/admin/images/cart.png" style={{height:25,width:25}}alt=""/></a>
+                      </li>
+                      <li>
+                          <a href="http://google.com">Log In/ Sign Up</a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+
+      </nav>
+      
     );
   }
 }

@@ -1,6 +1,6 @@
 html,body {
-  height:100%;
-  overflow-x:hidden;
+  /*height:100%;*/
+  /*overflow-x:hidden;*/
 }
 
 hr{
@@ -10,8 +10,13 @@ hr{
 
 .site-container {
   width: 100%;
-  max-width: 1140px;
+  
   background: inherit;
+}
+
+.main-container {
+  /*margin-top:80px;*/
+  width:100%;
 }
 
 .user-entry-forms {

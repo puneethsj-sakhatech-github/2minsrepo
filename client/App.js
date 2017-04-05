@@ -1,7 +1,8 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import ToastsList from './components/toasts/ToastsList';
 import NavigationBar from './components/NavigationBar';
 import ModalContainer from './components/common/ModalContainer';
+import Footer from './components/Footer/Footer';
 
 export default class App extends Component {
   // componentWillReceiveProps() {
@@ -30,21 +31,16 @@ export default class App extends Component {
     )
 
     return (
-        <div className="container site-container full-height">
-          <NavigationBar pathname={this.props.location.pathname}/>
-          <ToastsList/>
-          <div>
-            {isModal ?
-              this.previousChildren :
-              this.props.children
-            }
-            {isModal && (
-                <ModalContainer navigationModal={true} backToLink={this.previousChildren.props.location.pathname} modalTitle = {location.state.title} transitionName="modal-anim">
-                  {this.props.children}
-                </ModalContainer>
-            )}
-          </div>
+      <div className="wrapper">
+        <NavigationBar pathname={this.props.location.pathname} />
+        <ToastsList />
+        <div className="home">
+          {this.props.children}
         </div>
+        <div >
+          <Footer />
+        </div>
+      </div>
     );
   }
 }
