@@ -41,7 +41,7 @@ export default class Cart extends Component {
         cartItems = JSON.parse(localStorage.getItem('cartItems'));
         console.log(cartItems);
         for (var index = 0; index < cartItems.length; index++) {
-                total = total + cartItems[index].cost;
+                total = total + cartItems[index].product_Cost;
 
         }
     }

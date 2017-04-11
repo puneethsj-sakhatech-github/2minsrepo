@@ -48,17 +48,17 @@ export default class CartProducts extends Component {
         return (
             <div className="CartProducts">
                 <div className="col-sm-4 col-lg-4 col-md-4">
-                    <img src={this.props.product.url} alt="" />
+                    <img src={this.props.product.product_Desc} alt="" />
                 </div>
                 <div className="col-sm-8 col-lg-8 col-md-8">
                     <div>
                         <div className="caption1">
 
                             <div className='col-sm-4 col-lg-4 col-md-4'>
-                                <h4 className="pull-left">{this.props.product.Product_Name}</h4>
+                                <h4 className="pull-left">{this.props.product.product_Name}</h4>
                             </div>
                             <div className='col-sm-4 col-lg-4 col-md-4'>
-                                <h4 >{this.props.product.cost}</h4>
+                                <h4 >{this.props.product.product_Cost}</h4>
                             </div>
                             <div className='col-sm-2 col-lg-2 col-md-2'>
                             </div>

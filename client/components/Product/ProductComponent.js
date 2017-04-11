@@ -35,11 +35,11 @@ export default class ProductComponent extends Component {
             <div className="col-sm-3 col-lg-4 col-md-3">
                 <div className="thumbnail">
                     <div className="productImage">
-                        <ProductImage image={product.url} />
+                        <ProductImage image={product.product_Desc} />
                     </div>
                     <div className="caption">
-                        <ProductCost cost={product.cost}/>
-                        <ProductName name={product.Product_Name}/>
+                        <ProductCost cost={product.product_Cost}/>
+                        <ProductName name={product.product_Name}/>
                         <ProductDescription />
                         <Button_AddToCart addToCart = {this.addToCart} product={product}/>
                         
