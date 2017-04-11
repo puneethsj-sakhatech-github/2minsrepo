@@ -34,7 +34,7 @@ export default class App extends Component {
       <div className="wrapper">
         <NavigationBar pathname={this.props.location.pathname} />
         <ToastsList />
-        <div className="home">
+        <div className="site-container">
           {this.props.children}
         </div>
         <div >

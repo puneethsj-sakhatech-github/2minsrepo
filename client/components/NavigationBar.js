@@ -44,10 +44,10 @@ class NavigationBar extends Component {
                           <Link to="/groceries">Groceries</Link>
                       </li>
                       <li>
-                          <a href="#">Fruits</a>
+                          <Link to="/fruits">Fruits</Link>
                       </li>
                       <li>
-                          <a href="#">Vegetables</a>
+                          <Link to="/vegetables">Vegetables</Link>
                       </li>
                       <li>
                           <a href="#"></a>
@@ -105,10 +105,10 @@ class NavigationBar extends Component {
                           <a href="#"></a>
                       </li>
                       <li>
-                          <a href="http://google.com"><img src="http://www.foodytreat.com/admin/images/cart.png" style={{height:25,width:25}}alt=""/></a>
+                          <Link to="/cart"><img src="http://www.foodytreat.com/admin/images/cart.png" style={{height:25,width:25}}alt=""/></Link>
                       </li>
                       <li>
-                          <a href="http://google.com">Log In/ Sign Up</a>
+                          <Link to="/login">Log In/Sign Up</Link>
                       </li>
                   </ul>
               </div>

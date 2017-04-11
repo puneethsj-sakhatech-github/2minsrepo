@@ -34,15 +34,15 @@ class Carousel extends Component {
                             <span className="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div>*/}
-                    <div style={{ height: "60%", width: "100%"}}>
+                    <div style={{  width: "100%"}}>
                         <React_Boostrap_Carousel animation={true} className="carousel-fade">
-                            <div style={{ height: "60%", width: "100%" }}>
+                            <div style={{  width: "100%" }}>
                                 <img className="slide-image" src="http://enichols.com/wp-content/uploads/2015/04/grocery-header.jpg" alt=""/>
                             </div>
-                            <div style={{ height: "80%", width: "100%" }}>
+                            <div style={{  width: "100%" }}>
                                 <img className="slide-image" src="http://shoppersmark.in/wp-content/uploads/2016/01/CHENNAIS-FIRST-GROCERY-PORTAL.jpg"  alt=""/>
                             </div>
-                            <div style={{ height: "60%", width: "100%"}}>
+                            <div style={{  width: "100%"}}>
                                 <img className="slide-image" src="http://www.burlpres.org/wp-content/uploads/2014/05/fruit_post.jpg" alt=""/>
                             </div>
                         </React_Boostrap_Carousel>

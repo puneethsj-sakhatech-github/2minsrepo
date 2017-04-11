@@ -11,16 +11,21 @@ export function setCurrentUser(user) {
   };
 }
 
+export function userRegistrationRequest(authData){
+
+}
+
 export function userLoginRequest(authData) {
   return dispatch => {
     //uncomment the below line once the API is ready
-    let data = 'data='+JSON.stringify(authData);
-    return axios.post('/api/user/login',data).then(res => {
+    let data = JSON.stringify(authData);
+    return axios.post('2minapi/user/login',data).then(res => {
       console.log("auth login " , res);
       if(res.data.response) {
         const jwtToken = res.data.response.token;
         if(jwtToken) {
           localStorage.setItem('jwtToken',jwtToken);
+          console.log("Added to local storage")
           const decodedToken = jwt.decode(jwtToken);
           const user = decodedToken.user_details;
           const token = decodedToken.token;

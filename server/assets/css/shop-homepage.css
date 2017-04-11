@@ -6,14 +6,17 @@
 
 body {
     padding-top: 10px;
-    background-image: url('https://wallpaperscraft.com/image/twigs_grass_background_blurred_32398_1920x1080.jpg');
+    background-image: url('https://images6.alphacoders.com/305/305968.jpg');
     background-attachment: fixed;
+    background-size: cover;
+    
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    /*https://wallpaperscraft.com/image/twigs_grass_background_blurred_32398_1920x1080.jpg*/
 }
 
 .slide-image {
     width: 100%;
-    height: 500px;
+    /*height: 500px;*/
 }
 
 .carousel-holder {
@@ -28,6 +31,9 @@ body {
 .caption {
     height: 150px;
     overflow: hidden;
+}
+.caption btn{
+    align-content: center;
 }
 
 .caption h4 {
@@ -55,6 +61,7 @@ body {
 
 footer {
     margin: 50px 0;
+    text-decoration-color: black;
 }
 .Quantity{
     
@@ -71,4 +78,43 @@ position: relative;
     min-height: 0px;
     padding-right: 0px;
     padding-left: 0px;
+}
+.cart_Container{
+    min-height:500px;
+    
+    
+}
+.cart_Logo{
+    padding: 5px;
+    padding-top: 100px;
+    min-height:500px;
+    
+}
+.cart_Image{
+    min-height: 500px;
+    background-size: 280px, 480px;
+    background-image: url('http://www.foodytreat.com/admin/images/cart.png');
+    background-attachment: cover; 
+    background-repeat: no-repeat;
+
+}
+.CartProducts img{
+    width: 180px;
+    height: 150 px;
+}
+
+
+.P_Price{
+    width: 100px;
+    color:whitesmoke;
+
+}
+.caption1{
+    color: whitesmoke;
+    height: 50px;
+    overflow: hidden;
+    backface-visibility: 30%;
+}
+.checkout{
+    color: whitesmoke;
 }

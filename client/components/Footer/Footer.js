@@ -16,13 +16,13 @@ export default class Footer extends Component {
                                     <a href="#">Copyright &copy; 2 Minutes...!!!&trade; 2017</a>
                                 </li>
                                 <li>
-                                    <a href="">Groceries</a>
+                                    <a href="">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">Fruits</a>
+                                    <a href="#">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Vegetables</a>
+                                    <a href="#">Feedback</a>
                                 </li>
                             </ul>
                         </div>
